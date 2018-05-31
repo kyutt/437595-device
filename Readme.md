@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Yulia Yasnova](https://up.htmlacademy.ru/htmlcss/21/user/437595).
-* Наставник: [Виталя Игошин](https://github.com/Vitaligo).
+* Студент: [Yulia Yasnova (kyutt)](https://up.htmlacademy.ru/htmlcss/21/user/437595).
+* Наставник: [Виталя Игошин (Vitaligo)](https://github.com/Vitaligo).
 
 ---
 
