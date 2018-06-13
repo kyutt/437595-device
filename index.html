@@ -290,11 +290,11 @@
           проверить работоспособность покупки. Всякое бывает.
         </p>
 
-        <a class="map" href="map.html">
+        <a class="map" href="#map.html">
           <img src="img/map.jpg" width="560" height="220" alt="map">
         </a>
 
-        <a class="write-us" href="write-us.html">Напишите нам</a>
+        <a class="write-us" href="#write-us.html">Напишите нам</a>
       </section>
     
     </main>
@@ -361,20 +361,33 @@
       </div>
 
     </footer>
-      <div>
+      <div class="map-big" id="map.html">
         <img alt="Мы на карте" src="img/map-big.jpg" width="991" height="591">
       </div>
         
-    <section class="modal modal-login">
-      <h2>Ваше имя</h2>
-        <p>Представьтесь, пожалуйста</p>
-      <h2>Ваш e-mail</h2>
-        <p>Для отправки ответа</p>
-      <h2>Текст письма</h2>
-        <p>В свободной форме</p> 
-      <a class="send" href="send.html">Отправить</a> 
-      <!--Здесь будет форма-->
-      <span class="modal-close">x</span>
+    <section class="modal modal-login"> 
+      <form class="user" method="post" action="https://echo.htmlacademy.ru" id="write-us.html">
+        <div class="half-width">
+          <label for="user-name">
+            Ваше имя
+            <input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required>
+          </label>
+        </div>
+        <div class="half-width">
+          <label for="email">
+            Ваш e-mail
+          <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
+          </label>
+        </div>
+        <div>
+          <label class="letter-text" id="letter-text">
+            Текст письма
+          <textarea name="letter-text" placeholder="В свободной форме"> </textarea>
+          </label>
+        </div> 
+        <button type="submit">ОТПРАВИТЬ</button>    
+        <button class="modal-close">x</button>
+      </form>
     </section>      
   </body>
 </html>
