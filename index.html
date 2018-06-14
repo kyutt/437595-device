@@ -239,26 +239,26 @@
         </section>
       </section>     
 
-      <section class="main-partners">
-        <h2 class="visually-hidden">Наши партнеры</h2>
+      <section class="main-brands">
+        <h2 class="visually-hidden">Бренды</h2>
         <ul>
           <li>
-            <a class="partner-link" href="dji.html.">
+            <a class="brand-link" href="dji.html.">
               <img src="img/dji.jpg" width="260" height="100" alt="dji">
             </a>
           </li>  
           <li>  
-            <a class="partner-link" href="sp.gadgets.html">
+            <a class="brand-link" href="sp.gadgets.html">
               <img src="img/sp.gadgets.jpg" width="260" height="100" alt="sp.gadgets">
             </a>
           </li>  
           <li>
-            <a class="partner-link" href="GoPro.html">
+            <a class="brand-link" href="GoPro.html">
               <img src="img/GoPro.jpg" width="260" height="100" alt="GoPro">
             </a>
           </li>
           <li>  
-            <a class="partner-link" href="vive.html">
+            <a class="brand-link" href="vive.html">
               <img src="img/vive.jpg" width="260" height="100" alt="vive">
             </a>
           </li>
@@ -290,11 +290,10 @@
           проверить работоспособность покупки. Всякое бывает.
         </p>
 
-        <a class="map" href="#map.html">
+        <a class="yandex-map" href="#yandex-map>
           <img src="img/map.jpg" width="560" height="220" alt="map">
         </a>
-
-        <a class="write-us" href="#write-us.html">Напишите нам</a>
+        <a class="write-us" href="#write-us">Напишите нам</a>
       </section>
     
     </main>
@@ -359,14 +358,14 @@
           <img src="img/logo-html.png" width="27" height="35" alt="htmlacademy">
         </a>
       </div>
-
     </footer>
-      <div class="map-big" id="map.html">
+
+      <form class="modal-map" method="post" action="https://echo.htmlacademy.ru" id="yandex-map">
         <img alt="Мы на карте" src="img/map-big.jpg" width="991" height="591">
       </div>
         
     <section class="modal modal-login"> 
-      <form class="user" method="post" action="https://echo.htmlacademy.ru" id="write-us.html">
+      <form class="user" method="post" action="https://echo.htmlacademy.ru" id="write-us">
         <div class="half-width">
           <label for="user-name">
             Ваше имя
@@ -382,11 +381,13 @@
         <div>
           <label class="letter-text" id="letter-text">
             Текст письма
-          <textarea name="letter-text" placeholder="В свободной форме"> </textarea>
+          <textarea name="letter-text" placeholder="В свободной форме"></textarea>
           </label>
         </div> 
         <button type="submit">ОТПРАВИТЬ</button>    
-        <button class="modal-close">x</button>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </form>
     </section>      
   </body>
