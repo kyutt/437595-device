@@ -149,6 +149,22 @@
         </li>
       </ul>
       </section>
+
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current">
+          <a href="pagination-item-current-1.html">1</a>
+        </li>
+        <li class="pagination-item">
+          <a href="pagination-item-2.html">2</a>
+        </li>
+        <li class="pagination-item">
+          <a href="pagination-item-3.html">3</a>
+        </li>
+        <li class="pagination-item">
+          <a href="pagination-item-4.html">4</a>
+        </li>
+      </ul>
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -162,43 +178,47 @@
                 <div class="toggle toggle-max"></div>
               </div>
               <div class="selected-price">
-                <span class="visually-hidden">Минимальная цена</span>
-                <input type="text" placeholder="от 0">
-                <span class="visually-hidden">Максимальная цена</span>
-                <input type="text" placeholder="до 5000">
+                <label for="price-min">
+                  <span class="visually-hidden">Минимальная цена</span>
+                  <input type="text" id="price-min"  placeholder="от 0">
+                </label>
+                <label for="price-max">
+                  <span class="visually-hidden">Максимальная цена</span>
+                  <input type="text" id="price-max" placeholder="до 5000">
+                </label>
               </div>      
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
               <ul>
-                <li class="colors-option">
-                  <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="black" id="color-black" checked>
+                <li class="colors-option">   
                   <label for="color-black">
+                    <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="black" id="color-black" checked>
                     Черный
                   </label>  
                 </li>
                 <li class="colors-option">
-                  <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="white" id="color-white">
                   <label for="color-white">
+                    <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="white" id="color-white">
                     Белый
                   </label>
                 </li>
                 <li class="colors-option">
-                  <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="blue" id="color-blue" checked>
                   <label for="color-blue">
+                    <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="blue" id="color-blue" checked>
                     Синий
                   </label>
                 </li>
                 <li class="colors-option">
-                  <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="red" id="color-red" checked>
                   <label for="color-red">
-                  Красный
+                    <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="red" id="color-red" checked>
+                    Красный
                   </label> 
                 </li>
                 <li class="colors-option">
-                  <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="pink" id="color-pink">
                   <label for="color-pink">
-                  Розовый
+                    <input class="visually-hidden colors-input colors-input-checkbox" type="checkbox" name="pink" id="color-pink">
+                    Розовый
                   </label>
                 </li>
               </ul>  
@@ -217,34 +237,27 @@
           <button type="submit">Показать</button>
         </form>
       </section>
+
+      <section class="catalog-sort">
+        <h2 class="visually-hidden">Сортировка</h2>
+          <ul class="catalog-sort-type">
+            <li>
+              <a class="current">По цене</a>
+            </li>
+            <li>  
+              <a href="#">По типу</a>
+            </li>
+            <li>  
+              <a href="#">По популярности</a>
+            </li>
+          </ul>
+          <div class="catalog-sort-direction">
+            <a class="button-up" href="up">up</a>
+            <a class="button-down current">down</a>
+          </div>
+      </section>        
       </main>
-
-      <ul class="catalog-navigation">
-        <li class="catalog-navigation-prev">
-          <a class="nav-prev-next" href="prev.html">Назад</a>
-        </li>
-      </ul>
-
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a href="pagination-item-current-1.html">1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="pagination-item-2.html">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="pagination-item-3.html">3</a>
-        </li>
-        <li class="pagination-item">
-          <a href="pagination-item-4.html">4</a>
-        </li>
-      </ul>
-
-      <ul>
-        <li class="catalog-nav-next">
-          <a class="nav-prev-next" href="next.html">Вперед</a>
-      </li>
-      </ul>
+  
     <footer class="contaiter-type-footer">
       <div class="footer-left">
         <b>DEVICE</b>
