@@ -43,6 +43,12 @@ body {
   background-color: #ffffff;
 }
 
+.catalog-add  {
+  margin: 0;
+  padding:  0;
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -361,6 +367,12 @@ a {
   line-height: 30px;
 }
 
+.footer-center  {
+  margin: 0;
+  padding:  0;
+  list-style: none;
+}
+
 .footer-links {
   color: #ffffff;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -369,6 +381,12 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.18px;
+}
+
+.social-button  {
+  margin: 0;
+  padding:  0;
+  list-style: none;
 }
 
 .social-button {
