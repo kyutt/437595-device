@@ -79,25 +79,34 @@ a {
   background-color: #f7e296;
 }
 
-.main-header-logo {
+.main-header-logo b {
   width:  164px;
   height: 36px;
   color:  #000000;
   font-family:  "Gilroy ExtraBold", "Arial",  sans-serif;
   font-size:  48px;
-  font-weight:  400;
+  font-weight:  800;
   line-height:  48px;
   text-transform: uppercase;
-  letter-spacing: 0.26px;
+  letter-spacing: 0.48px;
 }
 
-.main-navigation  {
+.user-navigation  {
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial",  sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.15px
+  letter-spacing: 0.15px;
+}
+
+.user-block  a  {
+  color: #000000;
+  font-family:  "Open Sans", "Arial",  sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
 }
 
 .site-navigation-item {
@@ -106,10 +115,10 @@ a {
   color: #000000;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.18px;
 }
 
 .slider-item  b {
@@ -118,9 +127,9 @@ a {
   color: #000000;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 56px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.47px;
 }
 
 .slider-item  p {
@@ -138,24 +147,41 @@ a {
   width: 133px;
   height: 15px;
   color: #000000;
+  background-color: #f0c52e;
   font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 0.18px;
 }
 
-.slider-item  {
+.device-button:hover,
+.device-button:focus  {
+  width: 220px;
+  height: 40px;
+  background-color: #f0c52e;
+}
+
+.slider-item  span {
+  color: #ffffff;
+  font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179.2px;
+  letter-spacing: 0.179px
+}
+
+.slider-table-value {
   color: #000000;
-  font-family: "Gilroy Light",  "Arial", sans-serif;
+  font-family:  "Gilroy Light", "Arial", sans-serif ;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
   letter-spacing: 0.36px;
 }
 
-.slider-item  tr {
+.slider-table-name  {
   color: #464646;
   font-family: "Open Sans", "Arial",  sans-serif;
   font-size: 13px;
@@ -164,33 +190,54 @@ a {
   letter-spacing: 0.13px;
 }
 
-.main-type {
+.main-type  a {
   color: #000000;
   font-family:  "Gilroy ExtraBold",  "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
 
-.main-services {
-  font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 2.15px;
+.services  {
+  background-color: #e5e5e5;
 }
 
-.services-item  h3 {
+.main-services-button  {
+  list-style: none;
+}
+
+.main-services-button {
+  color: #000000;
+  font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.18px;
+}
+
+.main-services-button:hover {
+  width: 160px;
+  height: 40px;
+  background-color: #f0c52e;
+}
+
+.main-services-button:focus {
+  width: 278px;
+  height: 40px;
+  background-color: #000000;
+}
+
+.services-item  h3  {
   width: 217px;
   height: 39px;
   color: #000000;
   font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.47px;
 }
 
 .services-item p {
@@ -215,9 +262,9 @@ a {
   color: #000000;
   font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.47px;
 }
 
 .about-us p {
@@ -232,8 +279,21 @@ a {
   color: #000000;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 40px;
+}
+
+.device-btn-about-us  {
+  width: 215px;
+  height: 15px;
+  color: #000000;
+  background-color: #f0c52e;
+  font-family:  "Gilroy ExtraBold", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.18px;
 }
 
 .contacts h2  {
@@ -242,9 +302,9 @@ a {
   color: #000000;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 47px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 48px;
-  letter-spacing: 0.21px;
+  letter-spacing: 0.47px;
 }
 
 .contacts p {
@@ -261,12 +321,13 @@ a {
   width: 178px;
   height: 12px;
   color: #000000;
+  background-color: #f0c52e;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
+  letter-spacing: 0.18px;
 }
 
 .contaiter-type-footer {    
@@ -285,7 +346,7 @@ a {
   color: #ffc600;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.48px;
 }
@@ -304,10 +365,10 @@ a {
   color: #ffffff;
   font-family: "Gilroy ExtraBold", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.18px;
 }
 
 .social-button {
