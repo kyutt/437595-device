@@ -35,28 +35,28 @@
 
 body {
   min-width:  1240px;
-  font-weight:  400;
-  color:  #000000;
+  font-weight:  300;
+  color:  #464646;
   font-family:  "Open Sans Light",  "Arial",  sans-serif;
   font-size:  15px;
   line-height:  30px;
   background-color: #ffffff;
 }
 
-.catalog-add  {
+.list-unstyled  {
   margin: 0;
   padding:  0;
   list-style: none;
 }
 
-a {
+a  {
   text-decoration: none;
 }
 
 .main-navigation  {
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: #464646;
   background-color: #ffffff;
 }
 
@@ -67,7 +67,7 @@ a {
 
 .site-navigation  a,
 .user-navigation  a {
-  color:  #000000;
+  color:  #464646;
 }
 
 .site-navigation  a:hover,
@@ -153,20 +153,27 @@ a {
   width: 133px;
   height: 15px;
   color: #000000;
-  background-color: #f0c52e;
+  background-color: transparent;
   font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.18px;
+  border: none;
+  padding: 10px 30px;
+  background-image: linear-gradient(180deg, 
+                    transparent 40%, 
+                    #f0c52e 40%,
+                    #f0c52e 60%,
+                    transparent 60%,
+                    transparent);
 }
 
-.device-button:hover,
-.device-button:focus  {
-  width: 220px;
-  height: 40px;
-  background-color: #f0c52e;
+.device-button:hover  {
+  padding: 10px 30px;
+  border: none;
+  background: #f0c52e;
 }
 
 .slider-item  span {
