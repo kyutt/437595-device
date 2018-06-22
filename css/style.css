@@ -65,8 +65,8 @@ a  {
   list-style: none;
 }
 
-.site-navigation  a,
-.user-navigation  a {
+.site-navigation  a:hover,
+.user-navigation  a:hover {
   color:  #464646;
 }
 
@@ -81,9 +81,12 @@ a  {
 }
 
 .main-header  {
-  color:  #000000;
-  background-color: #f7e296;
-}
+  background: transparent;
+  background-image:   linear-gradient(
+                      to bottom,    
+                      transparent 40px,    
+                      #f7e296 40px);   
+  }
 
 .main-header-logo b {
   width:  164px;
