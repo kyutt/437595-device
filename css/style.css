@@ -1,406 +1,495 @@
 
 @font-face  {
-  font-weight:  800;
-  font-family:  "Gilroy ExtraBold";
-  font-style: normal;
-  src:  url(../fonts/gilroyextrabold.woff)  format("woff"),
-        url(../fonts/gilroyextrabold.woff2) format("woff2");
+	font-weight:  800;
+	font-family:  "Gilroy ExtraBold";
+	font-style: normal;
+	src:  url(../fonts/gilroyextrabold.woff)  format("woff"),
+				url(../fonts/gilroyextrabold.woff2) format("woff2");
 }
-    
+		
 
 @font-face  {
-  font-weight:  300;
-  font-family: "Gilroy Light";
-  font-style: normal;
-  src:  url(../fonts/gilroylight.woff)  format("woff"),
-        url(../fonts/gilroylight.woff2) format("woff2");
+	font-weight:  300;
+	font-family: "Gilroy Light";
+	font-style: normal;
+	src:  url(../fonts/gilroylight.woff)  format("woff"),
+				url(../fonts/gilroylight.woff2) format("woff2");
 }
 
 
 @font-face  {
-  font-weight:  400;
-  font-family:  "Open Sans";
-  font-style: normal;
-  src:  url(../fonts/opensans.woff) format("woff"),
-        url(../fonts/opensans.woff2)  format("woff2");
+	font-weight:  400;
+	font-family:  "Open Sans";
+	font-style: normal;
+	src:  url(../fonts/opensans.woff) format("woff"),
+				url(../fonts/opensans.woff2)  format("woff2");
 }
 
 @font-face  {
-  font-weight:  300;
-  font-family:  "Open Sans Light";
-  font-style: normal;
-  src:  url(../fonts/opensanslight.woff) format("woff"),
-        url(../fonts/opensanslight.woff2) format("woff2");
+	font-weight:  300;
+	font-family:  "Open Sans Light";
+	font-style: normal;
+	src:  url(../fonts/opensanslight.woff) format("woff"),
+				url(../fonts/opensanslight.woff2) format("woff2");
 }
 
 body {
-  min-width:  1240px;
-  font-weight:  300;
-  color:  #464646;
-  font-family:  "Open Sans Light",  "Arial",  sans-serif;
-  font-size:  15px;
-  line-height:  30px;
-  background-color: #ffffff;
+	min-width:  1240px;
+	font-weight:  300;
+	color:  #464646;
+	font-family:  "Open Sans Light",  "Arial",  sans-serif;
+	font-size:  15px;
+	line-height:  30px;
+	background-color: #ffffff;
 }
 
 .list-unstyled  {
-  margin: 0;
-  padding:  0;
-  list-style: none;
+	margin: 0;
+	padding:  0;
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height:	1px;
+	margin:	-1;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 a  {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .main-navigation  {
-  font-size: 18px;
-  line-height: 24px;
-  color: #464646;
-  background-color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	color: #464646;
 }
 
 .site-navigation,
 .user-navigation  {
-  list-style: none;
+	list-style: none;
 }
 
 .site-navigation  a:hover,
 .user-navigation  a:hover {
-  color:  #464646;
+	color:  #464646;
 }
 
 .site-navigation  a:hover,
 .user-navigation  a:hover {
-  background-color: #635a3c;
+		color: #635a3c;
 }
 
 .site-navigation  a:focus,
 .user-navigation  a:focus {
-  background-color: #b2b2b2;
+		color: #b2b2b2;
 }
-
+	 
 .main-header  {
-  background: transparent;
-  background-image:   linear-gradient(
-                      to bottom,    
-                      transparent 40px,    
-                      #f7e296 40px);   
-  }
+	background: transparent;
+	background-image:   linear-gradient(
+											to bottom,    
+											transparent 40px,    
+											#f7e296 40px);   
+	}
 
 .main-header-logo b {
-  width:  164px;
-  height: 36px;
-  color:  #000000;
-  font-family:  "Gilroy ExtraBold", "Arial",  sans-serif;
-  font-size:  48px;
-  font-weight:  800;
-  line-height:  48px;
-  text-transform: uppercase;
-  letter-spacing: 0.48px;
+	width:  164px;
+	height: 36px;
+	color:  #000000;
+	font-family:  "Gilroy ExtraBold", "Arial",  sans-serif;
+	font-size:  48px;
+	font-weight:  800;
+	line-height:  48px;
+	text-transform: uppercase;
+	letter-spacing: 0.48px;
 }
 
 .user-navigation  {
-  color: #000000;
-  font-family: "Open Sans", "Arial",  sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.15px;
+	color: #000000;
+	font-family: "Open Sans", "Arial",  sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.15px;
 }
 
 .user-block  a  {
-  color: #000000;
-  font-family:  "Open Sans", "Arial",  sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.15px;
+	color: #000000;
+	font-family:  "Open Sans", "Arial",  sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.15px;
 }
 
 .site-navigation-item {
-  width: 214px;
-  height: 12px;
-  color: #000000;
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.18px;
+	width: 214px;
+	height: 12px;
+	color: #000000;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+}
+
+.site-navigation-item span {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 42px;
+	opacity: 0.3;
+}
+
+.catalog-add-item	a {
+	width: 111px;
+	height: 15px;
+	color: #000000;
+	font-family: "Open Sans",  "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.15px;
 }
 
 .slider-item  b {
-  width:  394px;
-  height: 98px;
-  color: #000000;
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  line-height: 56px;
-  letter-spacing: 0.47px;
+	width:  394px;
+	height: 98px;
+	color: #000000;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 56px;
+	letter-spacing: 0.47px;
 }
 
 .slider-item  p {
-  width: 479px;
-  height: 46px;
-  color: #464646;
-  font-family:  "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.15px;
+	width: 479px;
+	height: 46px;
+	color: #464646;
+	font-family:  "Open Sans",  "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.15px;
 }
 
 .device-button  {
-  width: 133px;
-  height: 15px;
-  color: #000000;
-  background-color: transparent;
-  font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.18px;
-  border: none;
-  padding: 10px 30px;
-  background-image: linear-gradient(180deg, 
-                    transparent 40%, 
-                    #f0c52e 40%,
-                    #f0c52e 60%,
-                    transparent 60%,
-                    transparent);
+	width: 133px;
+	height: 15px;
+	color: #000000;
+	background-color: transparent;
+	font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+	border: none;
+	padding: 10px 40px;
+	background-image: linear-gradient(180deg, 
+										transparent 40%, 
+										#f0c52e 40%,
+										#f0c52e 60%,
+										transparent 60%,
+										transparent);
 }
 
 .device-button:hover  {
-  padding: 10px 30px;
-  border: none;
-  background: #f0c52e;
+	padding: 10px 40px;
+	border: none;
+	background: #f0c52e;
 }
 
-.slider-item  span {
-  color: #ffffff;
-  font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
-  font-size: 179px;
-  font-weight: 800;
-  line-height: 179.2px;
-  letter-spacing: 0.179px
+.slider-item    span {
+	color: #ffffff;
+	font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
+	font-size: 179px;
+	font-weight: 800;
+	line-height: 179.2px;
+	letter-spacing: 0.179px
 }
 
-.slider-table-value {
-  color: #000000;
-  font-family:  "Gilroy Light", "Arial", sans-serif ;
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 48px;
-  letter-spacing: 0.36px;
+.slider-table-value  {
+	color: #000000;
+	font-family:  "Gilroy Light", "Arial", sans-serif ;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 48px;
+	letter-spacing: 0.36px;
 }
 
 .slider-table-name  {
-  color: #464646;
-  font-family: "Open Sans", "Arial",  sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0.13px;
+	color: #464646;
+	font-family: "Open Sans", "Arial",  sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0.13px;
 }
 
-.main-type  a {
-  color: #000000;
-  font-family:  "Gilroy ExtraBold",  "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  letter-spacing: 0.18px;
+.main-type	{
+	color: #000000;
+	font-family:	"Gilroy ExtraBold",  "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	letter-spacing: 0.18px;
 }
 
-.services  {
-  background-color: #e5e5e5;
+.main-type	a	{
+	color: #000000;
+	font-family:	"Gilroy ExtraBold",  "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.18px;
 }
 
-.main-services-button  {
-  list-style: none;
+.services	{
+	background: transparent;
+	background-image:	linear-gradient(
+										to bottom,    
+										transparent 40px,    
+										#e5e5e5 40px);
 }
+
 
 .main-services-button {
-  color: #000000;
-  font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.18px;
+	color: #000000;
+	font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
 }
 
-.main-services-button:hover {
-  width: 160px;
-  height: 40px;
-  background-color: #f0c52e;
-}
-
-.main-services-button:focus {
-  width: 278px;
-  height: 40px;
-  background-color: #000000;
-}
 
 .services-item  h3  {
-  width: 217px;
-  height: 39px;
-  color: #000000;
-  font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  line-height: 48px;
-  letter-spacing: 0.47px;
+	width: 217px;
+	height: 39px;
+	color: #000000;
+	font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 48px;
+	letter-spacing: 0.47px;
 }
 
 .services-item p {
-  width: 426px;
-  height: 75px;
-  color: #464646;
-  font-family: "Open Sans", "Arial",  sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.15px;
+	width: 426px;
+	height: 75px;
+	color: #464646;
+	font-family: "Open Sans", "Arial",  sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.15px;
 }
 
 .main-brand-link {
-  width: 260px;
-  height: 100px;
+	width: 260px;
+	height: 100px;
 }
 
-.about-us h2  {  
-  width: 131px;
-  height: 35px;
-  color: #000000;
-  font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  line-height: 48px;
-  letter-spacing: 0.47px;
+.about-us	h2  {  
+	width: 131px;
+	height: 35px;
+	color: #000000;
+	font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 48px;
+	letter-spacing: 0.47px;
+	position: relative;
+  padding-top: 45px;
+  margin-bottom: 60px;
+}
+
+.about-us h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-color: black;
 }
 
 .about-us p {
-  color: #464646;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
+	color: #464646;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
 }
 
 .about-us li {
-  color: #000000;
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 40px;
+	color: #000000;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 40px;
 }
 
 .device-btn-about-us  {
-  width: 215px;
-  height: 15px;
-  color: #000000;
-  background-color: #f0c52e;
-  font-family:  "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.18px;
+	width: 215px;
+	height: 15px;
+	color: #000000;
+	background-color: transparent;
+	font-family:  "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+	border: none;
+	padding: 10px 40px;
+	background-image: linear-gradient(180deg, 
+										transparent 40%, 
+										#f0c52e 40%,
+										#f0c52e 60%,
+										transparent 60%,
+										transparent);
+}
+
+.device-btn-about-us:hover  {
+	padding: 10px 40px;
+	border: none;
+	background: #f0c52e;
 }
 
 .contacts h2  {
-  width: 216px;
-  height: 34px;
-  color: #000000;
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  line-height: 48px;
-  letter-spacing: 0.47px;
+	width: 216px;
+	height: 34px;
+	color: #000000;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 48px;
+	letter-spacing: 0.47px;
+	position: relative;
+  padding-top: 45px;
+  margin-bottom: 45px;
+}
+	.contacts	h2:before {
+		content: "";
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 80px;
+  	height: 7px;
+  	background-color: black;
 }
 
-.contacts p {
-  width: 511px;
-  height: 46px;
-  color: #464646;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
+.contacts p  {
+	width: 511px;
+	height: 46px;
+	color: #464646;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
 }
 
-.write-us {
-  width: 178px;
-  height: 12px;
-  color: #000000;
-  background-color: #f0c52e;
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.18px;
+.write-us   {
+	width: 178px;
+	height: 12px;
+	color: #000000;
+	background-color: transparent;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+	padding: 10px 40px;
+	background-image: linear-gradient(180deg, 
+										transparent 40%, 
+										#f0c52e 40%,
+										#f0c52e 60%,
+										transparent 60%,
+										transparent);
 }
 
-.contaiter-type-footer {    
-  width: 1440px;
-  height: 323px;
-  background-color: #464646;
+.write-us:hover   {
+	padding: 10px 40px;
+	border: none;
+	background: #f0c52e;
+}
+
+.contaiter-type-footer    { 
+	margin-top: 93px;   
+	background: transparent;
+	background-image:	linear-gradient(
+										to bottom,    
+										transparent 40px,    
+										#464646 40px); 
 }
 
 .contaiter-type-footer a {
-  color: #ffffff;
+	color: #ffffff;
 }
 
-.footer-left b {
-  width: 163px;
-  height: 36px;
-  color: #ffc600;
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 48px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.48px;
+.contaiter-type-footer b {
+	width: 163px;
+	height: 36px;
+	color: #ffc600;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 48px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.48px;
 }
 
 .contaiter-type-footer-left p {
-  width: 201px;
-  height: 15px;
-  color: #ffffff;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
+	width: 201px;
+	height: 15px;
+	color: #ffffff;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
 }
 
 .footer-center  {
-  margin: 0;
-  padding:  0;
-  list-style: none;
+	margin: 0;
+	padding:  0;
+	list-style: none;
 }
 
 .footer-links {
-  color: #ffffff;
-  font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.18px;
+	color: #ffffff;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
 }
 
 .social-button  {
-  margin: 0;
-  padding:  0;
-  list-style: none;
+	margin: 0;
+	padding:  0;
+	list-style: none;
 }
 
-.social-button {
-  color: #7e7e7e;
+.social-button    {
+	color: #7e7e7e;
 }
 
 .social-button a:hover {
@@ -408,24 +497,24 @@ a  {
 }
 
 .footer-user-block {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 36px;
-  letter-spacing: 0.15px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.15px;
 }
 
 .footer-user-block a {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 36px;
-  letter-spacing: 0.15px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.15px;
 }
 
 .footer-telephone-number p {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
 }
