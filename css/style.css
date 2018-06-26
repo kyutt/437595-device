@@ -62,6 +62,12 @@ body {
 	overflow:	hidden; 
 }
 
+img {
+    display: block;
+    height: auto;
+}
+
+
 .main-content {
 	display: flex;
 	flex-direction: column;
@@ -73,6 +79,7 @@ body {
 
 a  {
 	text-decoration: none;
+	color: #000000;
 }
 
 .main-navigation  {
@@ -102,15 +109,18 @@ a  {
 }
 
 .main-header  {
-	background: transparent;
-	background-image:	linear-gradient(
+	display: flex;
+  flex-direction: column;
+  margin-top: 21px;
+  padding-bottom: 49px;
+  background: transparent;  
+	background-image:	linear-gradient( 
 										to bottom,    
 										transparent 40px,    
 										#f7e296 40px);   
-	}
+}
 
 .main-header-logo b {
-
 	width:  164px;
 	height: 36px;
 	color:  #000000;
@@ -149,12 +159,7 @@ a  {
 	letter-spacing: 0.15px;
 
 	position: relative;
-  
-}
 
-.search-form {
-  position: relative;
-  width: 440px;
 }
 
 .search-form::before {
@@ -168,9 +173,8 @@ a  {
 
 .search-form	input[type="search"] {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  padding: 7px 10px 7px 50px;
+  padding-top: 5px;
+  padding-left: 40px;
   min-height: 45px;
   width: 357px;
   border: none;
@@ -187,6 +191,21 @@ a  {
 .search-form	input[type="search"]:focus {
   border-bottom: 2px solid #000000;
   opacity: 1;
+}
+
+.search-button	{
+		position: absolute;
+    top: 4px;
+    right: 0;
+    display: none;
+    padding: 5px 17px 4px;
+    font-size: 15px;
+    line-height: 36px;
+    font-family: "OpenSans-Light";
+    font-weight: 300;
+    color: #000000;
+    background: transparent;
+    border: 2px solid #000000;
 }
 
 .search-form	input[type="search"] + button {
@@ -230,18 +249,21 @@ a  {
 	margin-right:	491px;
 }
 
-.user-block  a  {
+.user-block	{
 	color: #000000;
 	font-family:  "Open Sans", "Arial",  sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: 0.15px;
+
+	display: flex;
+	flex-direction: row;
+	width: 1040px;
+	margin-bottom: 45px;
 }
 
 .site-navigation-item {
-	width: 214px;
-	height: 12px;
 	color: #000000;
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
@@ -251,12 +273,9 @@ a  {
 	letter-spacing: 0.18px;
 
 	display: flex;
-	flex-direction: row;
-	width: 1440px;
-	margin-bottom: 60px;
-	margin-top:	118px;
-	padding: 0;
-	list-style: none;
+	min-height: 290px;
+	margin-bottom: 95px;
+	
 }
 
 
@@ -277,6 +296,18 @@ a  {
 	font-weight: 300;
 	line-height: 36px;
 	letter-spacing: 0.15px;
+
+	display: flex;
+	justify-content: space-between;
+	width: 1160px;
+	margin-bottom: 80px; 
+	padding: 0;
+
+	list-style: none;
+}
+
+.content-radio-button	{
+	display: block;
 }
 
 .slider-item	{
@@ -288,10 +319,8 @@ padding-left: 60px;
 list-style: none; 
 }
 
-}
-
 .slider-item  b {
-	width:  394px;
+	
 	height: 98px;
 	color: #000000;
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -305,7 +334,7 @@ list-style: none;
 }
 
 .slider-item  p {
-	width: 479px;
+	
 	height: 46px;
 	color: #464646;
 	font-family:  "Open Sans",  "Arial", sans-serif;
@@ -313,6 +342,9 @@ list-style: none;
 	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: 0.15px;
+
+	display:	block;
+	text-align: center;
 }
 
 .device-button  {
@@ -334,6 +366,10 @@ list-style: none;
 										#f0c52e 60%,
 										transparent 60%,
 										transparent);
+
+	position: relative;
+  display: inline-block;
+  
 }
 
 .device-button:hover  {
@@ -358,6 +394,11 @@ list-style: none;
 	font-weight: 300;
 	line-height: 48px;
 	letter-spacing: 0.36px;
+
+	display: inline-block;
+  vertical-align: top;
+  margin-top: 52px;
+  margin-right: 80px;
 }
 
 .slider-table-name  {
@@ -367,6 +408,9 @@ list-style: none;
 	font-weight: 300;
 	line-height: 20px;
 	letter-spacing: 0.13px;
+
+	display: block;
+  margin-top: 11px;
 }
 
 .main-type	{
@@ -376,6 +420,11 @@ list-style: none;
 	font-weight: 800;
 	line-height: 24px;
 	letter-spacing: 0.18px;
+
+ 	max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 82px;
+  font-size: 0;
 }
 
 .main-type	a	{
@@ -385,10 +434,29 @@ list-style: none;
 	font-weight: 400;
 	line-height: 24px;
 	letter-spacing: 0.18px;
+
+	display: inline-block;
+  vertical-align: top;
+  margin-right: 39px;
+}
+
+.main-type-picture	{
+	margin-right: 0;
+
+	width: 160px;
+  height: 160px;
+  background: rgba(240, 197, 46, 0.5);
+}
+
+.main-type-picture img {
+	display: block;
+  height: auto;
 }
 
 .main-services-button > .services-button { 
   display: inline-block;
+  vertical-align: top;
+  margin-right: 23px;
 	color: #000000;
 	font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
 	font-size: 18px;
@@ -446,6 +514,13 @@ list-style: none;
 .main-brand-link {
 	width: 260px;
 	height: 100px;
+
+	display: flex;
+	width: 1160px;
+	margin-bottom: 95px;
+	padding: 0;
+
+	list-style: none;
 }
 
 .about-us	h2  {  
@@ -458,8 +533,10 @@ list-style: none;
 	line-height: 48px;
 	letter-spacing: 0.47px;
 	position: relative;
-  padding-top: 45px;
-  margin-bottom: 60px;
+  margin-top: 96px;
+  margin-bottom: 34px;
+
+
 }
 
 .about-us h2::before {
@@ -470,6 +547,7 @@ list-style: none;
   width: 80px;
   height: 7px;
   background-color: black;
+  left:	0;
 }
 
 .about-us p {

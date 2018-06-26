@@ -16,16 +16,20 @@
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search-field">Поиск по сайту</label>
           <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>    
+          <button class="search-button" type="submit">Найти</button>    
         </form>
         <div class="user-block">
           <ul class="user-navigation">
             <li>
               <a class="enter" href="login.html">Войти</a>
             </li>   
+            <li>
+              <a class="user-link compare" href="compare.html">Сравнить</a>
+            </li>
+            <li>
+              <a class="user-link basket" href="basket.html">Корзина</a>
+            </li>
           </ul>
-          <a class="user-link compare" href="compare.html">Сравнить</a>
-          <a class="user-link basket" href="basket.html">Корзина</a>
         </div>
         <div>
           <ul class="site-navigation">
@@ -68,24 +72,26 @@
         <ul class="slider-button list-unstyled">
           <li>
             <label for="content-button-1">
-              <input type="radio" id="content-button-1" name="slide">
+              <input class="content-radio-button" type="radio" id="content-button-1" name="slide">
             </label>
           </li>
           <li>
             <label for="content-button-2">
-              <input type="radio" id="content-button-2" name="slide">
+              <input class="content-radio-button" type="radio" id="content-button-2" name="slide">
             </label>
           </li>
           <li>
             <label for="content-button-3">
-              <input type="radio" id="content-button-3" name="slide">
+              <input class="content-radio-button" type="radio" id="content-button-3" name="slide">
             </label>
           </li>
         </ul>
         
         <section class="slider-item">
           <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
-          <div><img src="img/slider1.png" width="384" height="486" alt="Самая длинная палка для селфи"></div>
+          <div>
+            <img src="img/slider1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+          </div>
           <div class="description">
             <span class="number-slide">01</span>
               <b>
@@ -114,7 +120,9 @@
 
         <section class="slider-item">
           <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
-            <div><img src="img/slider2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты"></div>
+            <div>
+              <img src="img/slider2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+            </div>
             <div class="description">
               <span class="number-slide">02</span>
                 <b>
@@ -139,7 +147,9 @@
 
         <section class="slider-item">
           <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
-           <div><img src="img/slider3.png" width="526" height="334" alt="Квадрокоптер с лазером"></div>
+           <div>
+            <img src="img/slider3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+            </div>
             <div class="description">
               <span class="number-slide">03</span>
                 <b>
@@ -169,22 +179,34 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="list-unstyled">
           <li>
-            <a class="main-type-link" href="virtual.html">Виртуальная реальность</a>
+            <div class="main-type-picture">
+              <a class="main-type-link" href="virtual.html">Виртуальная реальность</a>
+            </div>
           </li>
           <li>
-            <a class="main-type-link" href="monopods.html">Моноподы для селфи</a>
+            <div class="main-type-picture">
+              <a class="main-type-link" href="monopods.html">Моноподы для селфи</a>
+            </div>
           </li>
           <li>
-            <a class="main-type-link" href="cameras.html">Экшн-камеры</a>
+            <div class="main-type-picture">
+              <a class="main-type-link" href="cameras.html">Экшн-камеры</a>
+            </div>
           </li>
           <li>
-            <a class="main-type-link" href="braslets.html">Фитнес браслеты</a>
+           <div class="main-type-picture">
+              <a class="main-type-link" href="braslets.html">Фитнес браслеты</a>
+            </div>
           </li>
           <li>  
-            <a class="main-type-link" href="clocks.html">Умные часы</a>
+            <div class="main-type-picture">
+              <a class="main-type-link" href="clocks.html">Умные часы</a>
+            </div>
           </li>
           <li>  
-            <a class="main-type-link" href="quadrocopter.html">Квадрокоптеры</a>
+            <div class="main-type-picture">
+              <a class="main-type-link" href="quadrocopter.html">Квадрокоптеры</a>
+            </div>
           </li>
         </ul>  
       </section>
