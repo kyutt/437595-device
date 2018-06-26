@@ -13,9 +13,10 @@
         <a class="main-header-logo"> 
           <b>DEVICE</b>
         </a>
-        <form class="search-form">
-          <input class="search-form-field" name="search" placeholder="Поиск по сайту">
-          <input type="submit" name="submit" value="Найти">    
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+          <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+          <button type="submit">Найти</button>    
         </form>
         <div class="user-block">
           <ul class="user-navigation">
@@ -23,8 +24,8 @@
               <a class="enter" href="login.html">Войти</a>
             </li>   
           </ul>
-          <a class="compare" href="compare.html">Сравнить</a>
-          <a class="basket" href="basket.html">Корзина</a>
+          <a class="user-link compare" href="compare.html">Сравнить</a>
+          <a class="user-link basket" href="basket.html">Корзина</a>
         </div>
         <div>
           <ul class="site-navigation">
@@ -64,7 +65,7 @@
     <main class="main-content">
       <section class="slider">
         <h2 class="visually-hidden">Новинки</h2>
-        <ul class="slider-button list-unstyled"">
+        <ul class="slider-button list-unstyled">
           <li>
             <label for="content-button-1">
               <input type="radio" id="content-button-1" name="slide">
@@ -84,7 +85,7 @@
         
         <section class="slider-item">
           <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
-          <img src="img/slider1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+          <div><img src="img/slider1.png" width="384" height="486" alt="Самая длинная палка для селфи"></div>
           <div class="description">
             <span class="number-slide">01</span>
               <b>
@@ -113,7 +114,7 @@
 
         <section class="slider-item">
           <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
-            <img src="img/slider2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+            <div><img src="img/slider2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты"></div>
             <div class="description">
               <span class="number-slide">02</span>
                 <b>
@@ -138,7 +139,7 @@
 
         <section class="slider-item">
           <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
-            <img src="img/slider3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+           <div><img src="img/slider3.png" width="526" height="334" alt="Квадрокоптер с лазером"></div>
             <div class="description">
               <span class="number-slide">03</span>
                 <b>
@@ -296,8 +297,8 @@
         </a>
         <a class="write-us" href="#write-us">Напишите нам</a>
       </section>
- 
     </main>
+
     <footer class="contaiter-type-footer">
       <div class="footer-left">
         <b>DEVICE</b>
@@ -369,26 +370,26 @@
       <form class="user" method="post" action="https://echo.htmlacademy.ru" id="write-us">
         <div class="half-width">
           <label for="user-name">
-            Ваше имя
+            <span>Ваше имя</span>
             <input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required>
           </label>
         </div>
         <div class="half-width">
           <label for="email">
-            Ваш e-mail
+            <span>Ваш e-mail</span>
           <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
           </label>
         </div>
-        <div>
+        <div class="half-width">
           <label class="letter-text" id="letter-text">
-            Текст письма
+            <span>Текст письма</span>
           <textarea name="letter-text" placeholder="В свободной форме"></textarea>
           </label>
-        </div> 
-        <button type="submit">ОТПРАВИТЬ</button>    
-        <button class="modal-close">
+          <button class="button-submit" type="submit">ОТПРАВИТЬ</button>
+          <button class="modal-close">
           <span class="visually-hidden">Закрыть</span>
-        </button>
+          </button>
+        </div>  
       </form>
     </section>      
   </body>
