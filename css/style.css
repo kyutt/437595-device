@@ -67,6 +67,9 @@ img {
     height: auto;
 }
 
+ul li {
+    list-style: none;
+}
 
 .main-content {
 	display: flex;
@@ -107,19 +110,24 @@ a  {
 .user-navigation  a:focus {
 		color: #b2b2b2;
 }
-
+/*шапка сайта*/
 .main-header  {
 	display: flex;
   flex-direction: column;
-  margin-top: 21px;
-  padding-bottom: 49px;
+  width: 1160px;
+  min-height: 190px;
+  margin: 0 auto;
+  padding: 22px 60px 50px;
+
+  color: #000000;
+ 
   background: transparent;  
 	background-image:	linear-gradient( 
-										to bottom,    
-										transparent 40px,    
-										#f7e296 40px);   
+										#ffffff 40px,
+                    rgba(240, 197, 46, 0.5) 40px,
+                    rgba(240, 197, 46, 0.5) 100%);
 }
-
+/*логотип*/
 .main-header-logo b {
 	width:  164px;
 	height: 36px;
@@ -146,6 +154,7 @@ a  {
 	color:#ae9e69;
 }
 
+/*форма поиска*/
 .search-form	{
 	width: 440px;
 	margin-right: 100px;
@@ -235,7 +244,7 @@ a  {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
 }
-
+/*user-block*/
 .user-navigation  {
 	color: #000000;
 	font-family: "Open Sans", "Arial",  sans-serif;
@@ -510,22 +519,37 @@ list-style: none;
 	line-height: 30px;
 	letter-spacing: 0.15px;
 }
+/*бренды*/
+.main-brands	{
+	width: 100%;
+  margin-top: 94px;
+  font-size: 0;
+}
 
 .main-brand-link {
 	width: 260px;
 	height: 100px;
 
-	display: flex;
-	width: 1160px;
-	margin-bottom: 95px;
-	padding: 0;
-
-	list-style: none;
+	position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 39px;
 }
+/*о нас*/
 
+.about-us {
+ 	width: 100%;
+  margin-top: 96px;
+  margin-bottom: 34px;
+}
+.delivery-company	{
+	position: relative;
+  float: left;
+  padding: 47px 0;
+}
 .about-us	h2  {  
-	width: 131px;
-	height: 35px;
+	width: 216px;
+	height: 34px;
 	color: #000000;
 	font-family: "Gilroy ExtraBold",  "Arial",  sans-serif;
 	font-size: 47px;
@@ -533,10 +557,10 @@ list-style: none;
 	line-height: 48px;
 	letter-spacing: 0.47px;
 	position: relative;
-  margin-top: 96px;
-  margin-bottom: 34px;
 
-
+	position: relative;
+  padding-top: 45px;
+  margin-bottom: 45px;
 }
 
 .about-us h2::before {
@@ -550,20 +574,38 @@ list-style: none;
   left:	0;
 }
 
-.about-us p {
+.delivery-company	p {
 	color: #464646;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
+
+	margin-bottom: 32px;
 }
 
-.about-us li {
-	color: #000000;
-	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-	font-size: 16px;
-	font-weight: 800;
-	line-height: 40px;
+.delivery-company-iteam	{
+	position: relative;
+}
+
+.delivery-company-iteam::before	{ /*рисуется только один кружочек у Автотрейдинга*/
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  margin-top: -3px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.delivery-company-list	{
+	  padding-left: 35px;
+    color: #000000;
+		font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+		font-size: 16px;
+		font-weight: 800;
+		line-height: 40px;
 }
 
 .device-btn-about-us  {
@@ -602,18 +644,20 @@ list-style: none;
 	font-weight: 800;
 	line-height: 48px;
 	letter-spacing: 0.47px;
+	
 	position: relative;
   padding-top: 45px;
   margin-bottom: 45px;
 }
-	.contacts	h2:before {
-		content: "";
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 80px;
-  	height: 7px;
-  	background-color: black;
+	
+.contacts	h2:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 7px;
+	background-color: black;
 }
 
 .contacts p  {
@@ -651,9 +695,9 @@ list-style: none;
 	border: none;
 	background: #f0c52e;
 }
-
+/*футер*/
 .contaiter-type-footer	{ 
-	margin-top: 93px;   
+	padding: 60px 0;   
 	background-color:	#464646;
 }
 
@@ -670,9 +714,13 @@ list-style: none;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 0.48px;
-}
 
-.contaiter-type-footer-left p {
+	float: left;
+  width: 50%;
+  margin: 0;
+}
+/*adress*/
+.contaiter-type-footer p {
 	width: 201px;
 	height: 15px;
 	color: #ffffff;
@@ -680,15 +728,21 @@ list-style: none;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
+	letter-spacing: 0;
+
+	float: left;
+	margin-right: 23px;     
 }
 
-.footer-center  {
-	margin: 0;
-	padding:  0;
-	list-style: none;
+/*delivery...*/
+.footer-links  {
+	float: left; 
+	font-size: 0;
+	margin-top: 29px;
+	padding: 0 4px;
 }
 
-.footer-links {
+.footer-links-iteam {
 	color: #ffffff;
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
@@ -696,46 +750,69 @@ list-style: none;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 0.18px;
+
+	display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
 }
 
-.social-button  {
-	margin: 0;
-	padding:  0;
-	list-style: none;
+.footer-links-iteam:last-child	{
+	margin-right:	0;
 }
 
-.social-button    {
+.footer-links-iteam	a:hover	{
+	color:	#a6a6a6;
+}
+
+.footer-links-iteam	a:focus	{
 	color: #7e7e7e;
 }
 
-.social-button a:hover {
-
+/*social*/
+.social-button  {
+	position: relative;
+  float: left;
+  width: 100%;
+  padding-top: 45px;
+  padding-left: 40px;
+  font-size: 0;
+  text-align: center;
 }
 
-.footer-user-block {
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 36px;
+.user {
+  width: 50%;
+  padding: 0 0 12px;
+  font-size: 0;
+  text-align: right;
+}
+
+.user-iteam	{
+	color: #ffffff;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
 	letter-spacing: 0.15px;
+  margin-right: 40px;
+  color: #c8c8c8;
+}
+.user-iteam:hover	{
+	color:	#ffffff;
 }
 
-.footer-user-block a {
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 36px;
-	letter-spacing: 0.15px;
-}
-
-.footer-telephone-number p {
-	width: 164px;
+.footer-telephone-number	{
+	margin-top: 23px;
+  float: right;
 	height: 13px;
 	color: #ffffff;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 30px;   
+	display: inline; 
 }
 
 .modal-login	{

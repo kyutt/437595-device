@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header clearfix">
       <nav class="main-navigation">
         <a class="main-header-logo"> 
           <b>DEVICE</b>
@@ -18,7 +18,7 @@
           <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>    
         </form>
-        <div class="user-block">
+        <div class="user-block clearfix">
           <ul class="user-navigation">
             <li>
               <a class="enter" href="login.html">Войти</a>
@@ -31,7 +31,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="clearfix">
           <ul class="site-navigation">
             <li>
               <a class="site-navigation-item main-links" href="catalog.html">Каталог товаров</a><span>+</span>
@@ -211,12 +211,12 @@
         </ul>  
       </section>
 
-      <section class="services">
+      <section class="services clearfix">
         <h2 class="visually-hidden">Наши сервисы</h2>
         <div class="main-services">
           <ul class="main-services-button list-unstyled">
             <li>
-              <label class="services-button" for="services-button-1">
+              <label class="services-button" for="services-button-1"  cheked>
                 <input type="radio" id="services-button-1" name="services">
                 Доставка
               </label>
@@ -289,22 +289,30 @@
         </ul>
       </section>
 
-      <section class="about-us">
-        <h2>О нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки
-          России! DEVICE работает со многими транспортными компаниями:
-        </p>
-        <ul class="list-unstyled">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="device-btn-about-us" href="about-us">Подробнее о нас</a>
+      <section class="about-us clearfix">
+        <div class="delivery-company">
+          <h2>О нас</h2>
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика,
+            который есть в каждом из нас.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки
+            России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul class="delivery-company-iteam  list-unstyled">
+            <li class="delivery-company-list">
+              <a>Деловые линии</a>
+            </li>
+            <li class="delivery-company-list">
+              <a>Автотрейдинг</a>
+            </li>
+            <li class="delivery-company-list">
+              <a>ЖелДорЭкспедиция</a>
+            </li>
+          </ul>
+          <a class="device-btn-about-us" href="about-us">Подробнее о нас</a>
+        </div>
       </section>
 
       <section class="contacts">
@@ -327,23 +335,21 @@
         <p>г. Москава, ул. Строителей, 15</p>
       </div>
 
-      <div class="footer-center">
       <div class="footer-links">
         <ul class="list-unstyled">
-          <li>
+          <li class="footer-links-iteam">
             <a href="delivery.html">Доставка</a>
           </li>
-          <li>  
+          <li class="footer-links-iteam">  
             <a href="warranty.html">Гарантия</a>
           </li>  
-          <li>  
+          <li class="footer-links-iteam">  
             <a href="contacts.html">Контакты</a>
           </li>
         </ul>  
-      </div> 
       </div>
 
-      <div class="social-button">
+      <div class="social-button clearfix">
         <ul class="list-unstyled">
           <li>
             <a class="social-button social-button-fb" href="fb.html">
@@ -363,14 +369,18 @@
         </ul>  
       </div>
       
-      <div class="user-block">
-          <ul class="user-navigation">
+      <div class="user">
+          <ul>
             <li>
-              <a class="enter" href="login.html">Войти</a>
-            </li>   
+              <a class="user-iteam user-iteam-login" href="login.html">Войти</a>
+            </li> 
+            <li>  
+              <a class="user-iteam user-iteam-compare" href="compare.html">Сравнить</a>
+            </li>
+            <li>
+              <a class="user-iteam user-iteam-basket" href="basket.html">Корзина</a>
+            </li>  
           </ul>
-          <a class="compare" href="compare.html">Сравнить</a>
-          <a class="basket" href="basket.html">Корзина</a>
       </div>
 
       <div class="footer-telephone-number">
