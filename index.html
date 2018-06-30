@@ -8,63 +8,70 @@
   </head>
 
   <body>
-    <header class="main-header clearfix">
+    <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo"> 
           <b>DEVICE</b>
         </a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-          <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+          <label class="visually-hidden" for="search-field">
+            Поиск по сайту
+            <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+          </label>
           <button class="search-button" type="submit">Найти</button>    
         </form>
-        <div class="user-block clearfix">
+        <div class="user-block">
           <ul class="user-navigation">
-            <li>
+            <li class="user-navigation-item">
               <a class="enter" href="login.html">Войти</a>
             </li>   
-            <li>
+            <li class="user-navigation-item">
               <a class="user-link compare" href="compare.html">Сравнить</a>
             </li>
-            <li>
+            <li class="user-navigation-item">
               <a class="user-link basket" href="basket.html">Корзина</a>
             </li>
           </ul>
         </div>
-        <div class="clearfix">
           <ul class="site-navigation">
             <li>
               <a class="site-navigation-item main-links" href="catalog.html">Каталог товаров</a><span>+</span>
-              <ul class="catalog-add list-unstyled"> 
-                <li class="catalog-add-item">
-                  <a href="virtual.html">Виртуальная реальность</a>
-                </li>
-                <li class="catalog-add-item">
-                  <a href="braslets.html">Фитнес браслеты</a></li>
-                <li class="catalog-add-item">
-                  <a href="quadrocopter.html">Квадрокоптеры</a></li>
-                <li class="catalog-add-item">
-                  <a href="monopods.html">Моноподы для селфи</a></li>
-                <li class="catalog-add-item">
-                  <a href="clocks.html">Умные часы</a>
-                </li>
-                <li class="catalog-add-item">
-                  <a href="cameras.html">Экшн-камеры</a>
-                </li>    
-              </ul>  
-                <li>
-                <a class="site-navigation-item" href="delivery.html">Доставка</a>
-                </li>
-                <li>
-                  <a class="site-navigation-item" href="warranty.html">Гарантия</a>
-                </li>
-                <li>
-                  <a class="site-navigation-item" href="contacts.html">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+              <div class="catalog-add-wrapper">
+                <ul class="catalog-add list-unstyled"> 
+                  <li class="catalog-add-item">
+                    <a href="virtual.html">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalog-add-item">
+                    <a href="braslets.html">Фитнес браслеты</a>
+                  </li>
+                  <li class="catalog-add-item">
+                    <a href="quadrocopter.html">Квадрокоптеры</a>
+                  </li>
+                  <li class="catalog-add-item">
+                    <a href="monopods.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="catalog-add-item">
+                    <a href="clocks.html">Умные часы</a>
+                  </li>
+                  <li class="catalog-add-item">
+                    <a href="cameras.html">Экшн-камеры</a>
+                  </li>
+                </ul>    
+              </div>
+          </ul>
+          <ul class="site-navigation-iteam list-unstyled">    
+            <li class="site-navigation-item-link">
+              <a class="delivery" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-navigation-item-link">
+              <a class="warranty" href="warranty.html">Гарантия</a>
+            </li>
+            <li class="site-navigation-item-link">
+              <a class="contacts" href="contacts.html">Контакты</a>
+            </li>
+          </ul>  
+      </nav>  
+    </header>
 
     <main class="main-content">
       <section class="slider">
@@ -211,12 +218,12 @@
         </ul>  
       </section>
 
-      <section class="services clearfix">
+      <section class="services">
         <h2 class="visually-hidden">Наши сервисы</h2>
         <div class="main-services">
           <ul class="main-services-button list-unstyled">
             <li>
-              <label class="services-button" for="services-button-1"  cheked>
+              <label class="services-button" for="services-button-1">
                 <input type="radio" id="services-button-1" name="services">
                 Доставка
               </label>
@@ -289,7 +296,7 @@
         </ul>
       </section>
 
-      <section class="about-us clearfix">
+      <section class="about-us">
         <div class="delivery-company">
           <h2>О нас</h2>
           <p>
@@ -349,7 +356,7 @@
         </ul>  
       </div>
 
-      <div class="social-button clearfix">
+      <div class="social-button">
         <ul class="list-unstyled">
           <li>
             <a class="social-button social-button-fb" href="fb.html">
