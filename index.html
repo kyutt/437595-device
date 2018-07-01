@@ -9,34 +9,39 @@
 
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo"> 
-          <b>DEVICE</b>
-        </a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search-field">
-            Поиск по сайту
-            <input type="search" id="search-field" name="search" placeholder="Поиск по сайту">
-          </label>
-          <button class="search-button" type="submit">Найти</button>    
-        </form>
-        <div class="user-block">
-          <ul class="user-navigation">
-            <li class="user-navigation-item">
-              <a class="enter" href="login.html">Войти</a>
-            </li>   
-            <li class="user-navigation-item">
-              <a class="user-link compare" href="compare.html">Сравнить</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-link basket" href="basket.html">Корзина</a>
-            </li>
-          </ul>
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo"> 
+            <b>DEVICE</b>
+          </a>
+          <div class="user-block">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="search-field"></label>
+                Поиск по сайту
+                <input class="search-field" type="search" id="search-field" name="search" placeholder="Поиск по сайту">
+              <button class="search-button" type="submit">Найти</button>    
+            </form>
+
+            <ul class="user-navigation">
+              <li class="enter">
+                <a href="login.html">Войти</a>  
+              </li> 
+            </ul>
+
+            <ul class="user-navigation-item list-unstyled">  
+              <li class="compare">
+                <a href="compare.html">Сравнить</a>
+              </li>
+              <li class="basket">
+                <a href="basket.html">Корзина</a>
+              </li>
+            </ul>
         </div>
+
+        <div class="catalog-add-wrapper">
           <ul class="site-navigation">
-            <li>
-              <a class="site-navigation-item main-links" href="catalog.html">Каталог товаров</a><span>+</span>
-              <div class="catalog-add-wrapper">
+            <li class="site-navigation-link">
+              <a href="catalog.html">Каталог товаров</a><span>+</span>
                 <ul class="catalog-add list-unstyled"> 
                   <li class="catalog-add-item">
                     <a href="virtual.html">Виртуальная реальность</a>
@@ -57,19 +62,19 @@
                     <a href="cameras.html">Экшн-камеры</a>
                   </li>
                 </ul>    
-              </div>
-          </ul>
-          <ul class="site-navigation-iteam list-unstyled">    
-            <li class="site-navigation-item-link">
-              <a class="delivery" href="delivery.html">Доставка</a>
-            </li>
-            <li class="site-navigation-item-link">
-              <a class="warranty" href="warranty.html">Гарантия</a>
-            </li>
-            <li class="site-navigation-item-link">
-              <a class="contacts" href="contacts.html">Контакты</a>
-            </li>
-          </ul>  
+              </li>
+           
+              <li class="site-navigation-link">
+                <a class="delivery" href="delivery.html">Доставка</a>
+              </li>
+              <li class="site-navigation-link">
+                <a class="warranty" href="warranty.html">Гарантия</a>
+              </li>
+              <li class="site-navigation-link">
+                <a class="contacts" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>  
       </nav>  
     </header>
 
@@ -78,19 +83,16 @@
         <h2 class="visually-hidden">Новинки</h2>
         <ul class="slider-button list-unstyled">
           <li>
-            <label for="content-button-1">
+            <label for="content-button-1"></label>
               <input class="content-radio-button" type="radio" id="content-button-1" name="slide">
-            </label>
           </li>
           <li>
-            <label for="content-button-2">
+            <label for="content-button-2"></label>
               <input class="content-radio-button" type="radio" id="content-button-2" name="slide">
-            </label>
           </li>
           <li>
-            <label for="content-button-3">
+            <label for="content-button-3"></label>
               <input class="content-radio-button" type="radio" id="content-button-3" name="slide">
-            </label>
           </li>
         </ul>
         
@@ -223,22 +225,19 @@
         <div class="main-services">
           <ul class="main-services-button list-unstyled">
             <li>
-              <label class="services-button" for="services-button-1">
+              <label class="services-button" for="services-button-1"></label>
                 <input type="radio" id="services-button-1" name="services">
                 Доставка
-              </label>
             </li>
             <li>
-              <label class="services-button" for="services-button-2">
+              <label class="services-button" for="services-button-2"></label>
                 <input type="radio" id="services-button-2" name="services">
                   Гарантия
-              </label>
             </li>
             <li>
-              <label class="services-button" for="services-button-3">
+              <label class="services-button" for="services-button-3"></label>
                 <input type="radio" id="services-button-3" name="services">
-                  Кредит
-              </label>   
+                  Кредит  
             </li>
           </ul>
         </div>
@@ -408,22 +407,19 @@
     <section class="modal modal-login"> 
       <form class="user" method="post" action="https://echo.htmlacademy.ru" id="write-us">
         <div class="half-width">
-          <label for="user-name">
+          <label for="user-name"></label>
             <span>Ваше имя</span>
             <input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" required>
-          </label>
         </div>
         <div class="half-width">
-          <label for="email">
+          <label for="email"></label>
             <span>Ваш e-mail</span>
           <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
-          </label>
         </div>
         <div class="half-width">
-          <label class="letter-text" id="letter-text">
+          <label class="letter-text" id="letter-text"></label>
             <span>Текст письма</span>
           <textarea name="letter-text" placeholder="В свободной форме"></textarea>
-          </label>
           <button class="button-submit" type="submit">ОТПРАВИТЬ</button>
           <button class="modal-close">
           <span class="visually-hidden">Закрыть</span>
