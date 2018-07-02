@@ -343,7 +343,7 @@ letter-spacing: 0.15px;
 
 .slider-button	{
 	position: absolute;
-  top: 403px;
+  top: 270px;
   right: 80px;
   display: flex;
   flex-direction: row;
@@ -365,81 +365,47 @@ letter-spacing: 0.15px;
 
 .slider-item	{
 	display: flex; 
-	width: 1040px; 
-	margin-bottom: 115px; 
-	padding: 0; 
-	padding-left: 60px; 
-	list-style: none; 
+	width: 1010px; 
+	margin-bottom: 188px; 
+	margin-left: 90px; 	
 }
 
-/*
 .slider-item  b {
-	
-	color: #000000;
-	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-	font-size: 47px;
-	font-weight: 800;
-	line-height: 56px;
-	letter-spacing: 0.47px;
-}
-*/
-.tagline	{
-	color: #000000;
-	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
-	font-size: 47px;
-	font-weight: 800;
-	line-height: 56px;
-	letter-spacing: 0.47px;
 	position: relative;
 
   display: block;
-  margin-bottom: 20px;
-  padding-top: 75px;
-
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 56px;
-}
-
-.tagline::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 0;
-
-  width: 100px;
-  height: 8px;
-
-  background-color: #ffffff;
+  
+	color: #000000;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 56px;
+	letter-spacing: 0.47px;
 }
 
 .slider-item  p {
+	position: relative;
 	color: #464646;
 	font-family:  "Open Sans",  "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
-	letter-spacing: 0.15px;
+	letter-spacing: 0.15px;	
 }
 
-.slider-item .description	{
-	padding-right: 20px;
-  padding-left: 20px;
+.slider-item .slider1	{
+	margin-left: 65px;
+	margin-right: 115px;  
 }
 
-.slider-item .sliders-photo:nth-child(1)	{
-	margin-right: 105px;
-  margin-left: 90px;
+.slider-item .slider2	{
+	margin-left: 90px;
+	margin-right: 106px;
 }
 
-.slider-item .sliders-photo:nth-child(2)	{
-	margin-right: 120px;
-  margin-left: 116px;
-}
-
-.slider-item .sliders-photo:nth-child(3)	{
-	margin-right: 20px;
-  margin-left: 30px;
+.slider-item .slider3	{
+	margin-left: 11px;
+	margin-right: 13px;
 }
 
 .slider-table .slider-table-value	{
@@ -460,18 +426,6 @@ letter-spacing: 0.15px;
 	letter-spacing: 0.13px;
 }
 
-/*
-.slider-item 	span 	{
-	color: #ffffff;
-	font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
-	font-size: 179px;
-	font-weight: 800;
-	line-height: 179.2px;
-
-	top: 237px;
-	margin-right: 200px;
-}
-*/
 .device-button  {
 	width: 133px;
 	height: 15px;
@@ -502,26 +456,18 @@ letter-spacing: 0.15px;
 	border: none;
 	background: #f0c52e;
 }
+/*категории товаров*/
+.main-type-list	{
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 
-
-
-
-/*
-.main-type	{
-	color: #000000;
-	font-family:	"Gilroy ExtraBold",  "Arial", sans-serif;
-	font-size: 18px;
-	font-weight: 800;
-	line-height: 24px;
-	letter-spacing: 0.18px;
-
- 	max-width: 1160px;
-  margin: 0 auto;
-  margin-top: 82px;
-  font-size: 0;
+  list-style: none;
 }
 
-.main-type	a	{
+.main-type a {
 	color: #000000;
 	font-family:	"Gilroy ExtraBold",  "Arial", sans-serif;
 	font-size: 18px;
@@ -529,10 +475,32 @@ letter-spacing: 0.15px;
 	line-height: 24px;
 	letter-spacing: 0.18px;
 
-	display: inline-block;
-  vertical-align: top;
-  margin-right: 39px;
+	position: relative;
+
+  display: block;
+  width: 160px;
+  padding-top: 195px;
 }
+
+.main-type a:active	{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.main-type	a::before	{
+	content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: #f0c52e;
+	opacity: 0.5;
+}
+
+/*
+
 
 .main-type-picture	{
 	margin-right: 0;
@@ -909,7 +877,6 @@ letter-spacing: 0.15px;
 	color: #7e7e7e;
 }
 
-
 .user {
   width: 50%;
   padding: 0 0 12px;
@@ -986,7 +953,6 @@ letter-spacing: 0.15px;
 .half-width input:invalid	{
 	background-color: #f6dada; не знаю как сделать, гороит розовым при обычном состоянии
 }
-
 
 .button-submit	{
 	width: 178px;
