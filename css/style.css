@@ -273,7 +273,7 @@ a  {
 .catalog-add	{
 
 color: #000000;
-font-family: "Open Sans";
+font-family: "Open Sans",  "Arial", sans-serif;
 font-size: 15px;
 font-weight: 300;
 line-height: 30px;
@@ -284,7 +284,7 @@ letter-spacing: 0.15px;
 	color: #000000;
 	font-family: "Gilroy ExtraBold", "Arial",  sans-serif;
 	font-size: 18px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 0.18px;
@@ -343,7 +343,7 @@ letter-spacing: 0.15px;
 
 .slider-button	{
 	position: absolute;
-  top: 300px;
+  top: 403px;
   right: 80px;
   display: flex;
   flex-direction: row;
@@ -372,6 +372,7 @@ letter-spacing: 0.15px;
 	list-style: none; 
 }
 
+/*
 .slider-item  b {
 	
 	color: #000000;
@@ -380,6 +381,36 @@ letter-spacing: 0.15px;
 	font-weight: 800;
 	line-height: 56px;
 	letter-spacing: 0.47px;
+}
+*/
+.tagline	{
+	color: #000000;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 56px;
+	letter-spacing: 0.47px;
+	position: relative;
+
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 75px;
+
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.tagline::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+
+  width: 100px;
+  height: 8px;
+
+  background-color: #ffffff;
 }
 
 .slider-item  p {
@@ -411,12 +442,30 @@ letter-spacing: 0.15px;
   margin-left: 30px;
 }
 
+.slider-table .slider-table-value	{
+	color: #000000;
+	font-family: "Open Sans",  "Arial", sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 48px;
+	letter-spacing: 0.36px;
+}
+
+.slider-table .slider-table-name	{
+	color: #464646;
+	font-family: "Open Sans",  "Arial", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0.13px;
+}
+
 /*
 .slider-item 	span 	{
 	color: #ffffff;
 	font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
 	font-size: 179px;
-	font-weight: 400;
+	font-weight: 800;
 	line-height: 179.2px;
 
 	top: 237px;
