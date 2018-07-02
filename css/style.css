@@ -336,44 +336,93 @@ letter-spacing: 0.15px;
 .site-navigation-link:last-child	{
 	margin-left:	auto;
 }
+/*слайдер*/
+.slider .container	{
+	position: relative;
+}
+
+.slider-button	{
+	position: absolute;
+  top: 300px;
+  right: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.slider-button-item	{ 
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+	position: relative;
+}
+
+.slider-button-item::before {
+  content: "";
+  position: absolute;
+}
 
 .slider-item	{
-display: flex; 
-width: 1040px; 
-margin-bottom: 115px; 
-padding: 0; 
-padding-left: 60px; 
-list-style: none; 
+	display: flex; 
+	width: 1040px; 
+	margin-bottom: 115px; 
+	padding: 0; 
+	padding-left: 60px; 
+	list-style: none; 
 }
 
 .slider-item  b {
 	
-	height: 98px;
 	color: #000000;
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 56px;
 	letter-spacing: 0.47px;
-
-	display:	block;
-	text-align: center;
 }
 
 .slider-item  p {
-	
-	height: 46px;
 	color: #464646;
 	font-family:  "Open Sans",  "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: 0.15px;
-
-	display:	block;
-	text-align: center;
 }
 
+.slider-item .description	{
+	padding-right: 20px;
+  padding-left: 20px;
+}
+
+.slider-item .sliders-photo:nth-child(1)	{
+	margin-right: 105px;
+  margin-left: 90px;
+}
+
+.slider-item .sliders-photo:nth-child(2)	{
+	margin-right: 120px;
+  margin-left: 116px;
+}
+
+.slider-item .sliders-photo:nth-child(3)	{
+	margin-right: 20px;
+  margin-left: 30px;
+}
+
+/*
+.slider-item 	span 	{
+	color: #ffffff;
+	font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
+	font-size: 179px;
+	font-weight: 400;
+	line-height: 179.2px;
+
+	top: 237px;
+	margin-right: 200px;
+}
+*/
 .device-button  {
 	width: 133px;
 	height: 15px;
@@ -405,43 +454,10 @@ list-style: none;
 	background: #f0c52e;
 }
 
-/*сладер*/
 
-.slider-item    span {
-	color: #ffffff;
-	font-family: "Gilroy ExtraBold",  "Arial", sans-serif;
-	font-size: 179px;
-	font-weight: 800;
-	line-height: 179.2px;
-	letter-spacing: 0.179px
-}
 
-.slider-table-value  {
-	color: #000000;
-	font-family:  "Gilroy Light", "Arial", sans-serif ;
-	font-size: 36px;
-	font-weight: 300;
-	line-height: 48px;
-	letter-spacing: 0.36px;
 
-	display: inline-block;
-  vertical-align: top;
-  margin-top: 52px;
-  margin-right: 80px;
-}
-
-.slider-table-name  {
-	color: #464646;
-	font-family: "Open Sans", "Arial",  sans-serif;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 20px;
-	letter-spacing: 0.13px;
-
-	display: block;
-  margin-top: 11px;
-}
-
+/*
 .main-type	{
 	color: #000000;
 	font-family:	"Gilroy ExtraBold",  "Arial", sans-serif;
@@ -716,45 +732,101 @@ list-style: none;
 	background: #f0c52e;
 }
 /*футер*/
-.contaiter-type-footer	{ 
-	padding: 60px 0;   
-	background-color:	#464646;
+.main-footer	{ 
+	background-color: #464646;
 }
 
-.contaiter-type-footer a {
-	color: #ffffff;
+.main-footer a {
+  color: #ffffff;
 }
 
-.contaiter-type-footer b {
-	width: 163px;
-	height: 36px;
-	color: #ffc600;
+.main-footer a:hover,
+.main-footer a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-footer a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+/*
+.main-footer	.footer-left	{
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+*/
+.footer-left	.main-footer-logo {
+	
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 48px;
-	font-weight: 800;
+	font-weight: 400;
 	text-transform: uppercase;
-	letter-spacing: 0.48px;
 
-	float: left;
-  width: 50%;
-  margin: 0;
+	letter-spacing: 0.48px;
+	margin-right: auto;
+
+  color: rgba(255, 198, 0, 1);
 }
-/*adress*/
-.contaiter-type-footer p {
-	width: 201px;
-	height: 15px;
+
+.footer-left .main-footer-logo {
+  margin-right: auto;
+
+  color: rgba(255, 198, 0, 1);
+}
+
+.footer-left .main-footer-logo:hover,
+.footer-left .footer-logo:focus {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-left .main-footer-logo:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+.footer-left .contact-address {
 	color: #ffffff;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
-	letter-spacing: 0;
 
-	float: left;
-	margin-right: 23px;     
+	margin-top: 140px;
 }
 
-/*delivery...*/
+.footer-links	{
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+}
+/*
+.social-button	{
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+*/
+.user {
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.15px;
+}
+
+.footer-telephone-number	{
+	color: #ffffff;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+/*delivery...
 .footer-links  {
 	float: left; 
 	font-size: 0;
@@ -788,16 +860,6 @@ list-style: none;
 	color: #7e7e7e;
 }
 
-/*social*/
-.social-button  {
-	position: relative;
-  float: left;
-  width: 100%;
-  padding-top: 45px;
-  padding-left: 40px;
-  font-size: 0;
-  text-align: center;
-}
 
 .user {
   width: 50%;
@@ -875,7 +937,7 @@ list-style: none;
 .half-width input:invalid	{
 	background-color: #f6dada; не знаю как сделать, гороит розовым при обычном состоянии
 }
-*/
+
 
 .button-submit	{
 	width: 178px;

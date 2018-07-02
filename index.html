@@ -80,17 +80,18 @@
 
     <main class="main-content">
       <section class="slider">
+        <div class="container">
         <h2 class="visually-hidden">Новинки</h2>
         <ul class="slider-button list-unstyled">
-          <li>
+          <li class="slider-button-item">
             <label for="content-button-1"></label>
               <input class="content-radio-button" type="radio" id="content-button-1" name="slide">
           </li>
-          <li>
+          <li class="slider-button-item">
             <label for="content-button-2"></label>
               <input class="content-radio-button" type="radio" id="content-button-2" name="slide">
           </li>
-          <li>
+          <li class="slider-button-item">
             <label for="content-button-3"></label>
               <input class="content-radio-button" type="radio" id="content-button-3" name="slide">
           </li>
@@ -98,7 +99,7 @@
         
         <section class="slider-item">
           <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
-          <div>
+          <div class="sliders-photo">
             <img src="img/slider1.png" width="384" height="486" alt="Самая длинная палка для селфи">
           </div>
           <div class="description">
@@ -129,7 +130,7 @@
 
         <section class="slider-item">
           <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
-            <div>
+            <div class="sliders-photo">
               <img src="img/slider2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
             </div>
             <div class="description">
@@ -156,7 +157,7 @@
 
         <section class="slider-item">
           <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
-           <div>
+           <div class="sliders-photo">
             <img src="img/slider3.png" width="526" height="334" alt="Квадрокоптер с лазером">
             </div>
             <div class="description">
@@ -182,7 +183,9 @@
           </table>
           </div>
         </section>
+        </div>
       </section>
+
 
       <section class="main-type">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -335,11 +338,15 @@
       </section>
     </main>
 
-    <footer class="contaiter-type-footer">
-      <div class="footer-left">
-        <b>DEVICE</b>
-        <p>г. Москава, ул. Строителей, 15</p>
-      </div>
+    <footer class="main-footer">
+      <div class="main-footer-container">
+
+        <div class="footer-left">
+          <a class="main-footer-logo">
+            <b>DEVICE</b>
+          </a>
+          <p class="contact-address">г. Москва, ул. Строителей, 15</p>
+        </div>
 
       <div class="footer-links">
         <ul class="list-unstyled">
@@ -376,7 +383,7 @@
       </div>
       
       <div class="user">
-          <ul>
+          <ul class="list-unstyled">
             <li>
               <a class="user-iteam user-iteam-login" href="login.html">Войти</a>
             </li> 
