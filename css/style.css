@@ -106,6 +106,8 @@ a  {
 .user-navigation  a:focus {
 		color: #b2b2b2;
 }
+
+}
 /*шапка сайта*/
 .main-header {
 	width: 1440px;
@@ -115,9 +117,8 @@ a  {
 .main-navigation {
   display: flex;
   flex-direction: column;
-  width: 1160px;
-  min-height: 300px;
-	margin: 40px auto 50px auto;
+  
+	
 	padding: 0 60px;
   background: transparent;  
 	background-image:	linear-gradient( 
@@ -126,7 +127,6 @@ a  {
 										#f7e296 23px);
 }
 
-/*логотип*/
 .main-header-logo	{
 	align-self: flex-start;
   margin-bottom: 5px;
